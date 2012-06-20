@@ -3,20 +3,25 @@
 //  AKWebView
 //
 //  Created by Anne Halsall on 6/20/12.
-//  Copyright (c) 2012 Quora. All rights reserved.
+//  Copyright (c) 2012 Anne K. Halsall. All rights reserved.
 //
 
 #import "AKAppDelegate.h"
+#import "AKWebViewController.h"
 
 @implementation AKAppDelegate
 
 @synthesize window = _window;
+@synthesize wbvc = _wbvc;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.wbvc = [[AKWebViewController alloc] init];
+    self.window.rootViewController = self.wbvc;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

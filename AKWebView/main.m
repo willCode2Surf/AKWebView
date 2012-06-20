@@ -3,7 +3,7 @@
 //  AKWebView
 //
 //  Created by Anne Halsall on 6/20/12.
-//  Copyright (c) 2012 Quora. All rights reserved.
+//  Copyright (c) 2012 Anne K. Halsall. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

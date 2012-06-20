@@ -13,6 +13,10 @@
 		97FA14E31592611700C36F73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97FA14E11592611700C36F73 /* InfoPlist.strings */; };
 		97FA14E51592611700C36F73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FA14E41592611700C36F73 /* main.m */; };
 		97FA14E91592611700C36F73 /* AKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FA14E81592611700C36F73 /* AKAppDelegate.m */; };
+		97FA14F21592614900C36F73 /* AKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FA14F01592614900C36F73 /* AKWebViewController.m */; };
+		97FA14F31592614900C36F73 /* AKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FA14F11592614900C36F73 /* AKWebViewController.xib */; };
+		97FA14F61592616800C36F73 /* AKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FA14F51592616800C36F73 /* AKWebView.m */; };
+		97FA14F9159261ED00C36F73 /* titan.html in Resources */ = {isa = PBXBuildFile; fileRef = 97FA14F8159261ED00C36F73 /* titan.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,18 @@
 		97FA14D81592611700C36F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97FA14DA1592611700C36F73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97FA14DC1592611700C36F73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		97FA14E01592611700C36F73 /* AKWebView-Info.plist */ = {isa = PBXFileReference; path = "AKWebView-Info.plist"; sourceTree = "<group>"; };
+		97FA14E01592611700C36F73 /* AKWebView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AKWebView-Info.plist"; sourceTree = "<group>"; };
 		97FA14E21592611700C36F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97FA14E41592611700C36F73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97FA14E61592611700C36F73 /* AKWebView-Prefix.pch */ = {isa = PBXFileReference; path = "AKWebView-Prefix.pch"; sourceTree = "<group>"; };
-		97FA14E71592611700C36F73 /* AKAppDelegate.h */ = {isa = PBXFileReference; path = AKAppDelegate.h; sourceTree = "<group>"; };
+		97FA14E61592611700C36F73 /* AKWebView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AKWebView-Prefix.pch"; sourceTree = "<group>"; };
+		97FA14E71592611700C36F73 /* AKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAppDelegate.h; sourceTree = "<group>"; };
 		97FA14E81592611700C36F73 /* AKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKAppDelegate.m; sourceTree = "<group>"; };
+		97FA14EF1592614900C36F73 /* AKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKWebViewController.h; sourceTree = "<group>"; };
+		97FA14F01592614900C36F73 /* AKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKWebViewController.m; sourceTree = "<group>"; };
+		97FA14F11592614900C36F73 /* AKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKWebViewController.xib; sourceTree = "<group>"; };
+		97FA14F41592616800C36F73 /* AKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKWebView.h; sourceTree = "<group>"; };
+		97FA14F51592616800C36F73 /* AKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKWebView.m; sourceTree = "<group>"; };
+		97FA14F8159261ED00C36F73 /* titan.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = titan.html; path = Resources/titan.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,12 @@
 			children = (
 				97FA14E71592611700C36F73 /* AKAppDelegate.h */,
 				97FA14E81592611700C36F73 /* AKAppDelegate.m */,
+				97FA14F41592616800C36F73 /* AKWebView.h */,
+				97FA14F51592616800C36F73 /* AKWebView.m */,
+				97FA14EF1592614900C36F73 /* AKWebViewController.h */,
+				97FA14F01592614900C36F73 /* AKWebViewController.m */,
+				97FA14F11592614900C36F73 /* AKWebViewController.xib */,
+				97FA14F71592619500C36F73 /* Resources */,
 				97FA14DF1592611700C36F73 /* Supporting Files */,
 			);
 			path = AKWebView;
@@ -88,6 +104,14 @@
 				97FA14E61592611700C36F73 /* AKWebView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97FA14F71592619500C36F73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97FA14F8159261ED00C36F73 /* titan.html */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +142,7 @@
 			attributes = {
 				CLASSPREFIX = AK;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = Quora;
+				ORGANIZATIONNAME = "Anne K. Halsall";
 			};
 			buildConfigurationList = 97FA14CE1592611700C36F73 /* Build configuration list for PBXProject "AKWebView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -143,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FA14E31592611700C36F73 /* InfoPlist.strings in Resources */,
+				97FA14F31592614900C36F73 /* AKWebViewController.xib in Resources */,
+				97FA14F9159261ED00C36F73 /* titan.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +181,8 @@
 			files = (
 				97FA14E51592611700C36F73 /* main.m in Sources */,
 				97FA14E91592611700C36F73 /* AKAppDelegate.m in Sources */,
+				97FA14F21592614900C36F73 /* AKWebViewController.m in Sources */,
+				97FA14F61592616800C36F73 /* AKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +253,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AKWebView/AKWebView-Prefix.pch";
 				INFOPLIST_FILE = "AKWebView/AKWebView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -236,6 +265,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AKWebView/AKWebView-Prefix.pch";
 				INFOPLIST_FILE = "AKWebView/AKWebView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
