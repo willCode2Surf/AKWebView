@@ -13,5 +13,6 @@
 @property (nonatomic, assign, readonly) CGFloat documentHeight;
 
 - (void)removeShadows;
+- (void)matchBackgroundColorToDocument;
 
 @end

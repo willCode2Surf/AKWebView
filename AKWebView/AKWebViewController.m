@@ -37,7 +37,7 @@
     
     self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.webView.delegate = self;
-    self.webView.backgroundColor = [UIColor whiteColor];
+
     [self.webView removeShadows];
     
     [self.view addSubview:self.webView];
@@ -47,13 +47,20 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    self.webView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+#pragma mark - UIWebView delegate
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView 
+{
+    // The document needs to be done loading before we can get the background color.
+    [(AKWebView*)webView matchBackgroundColorToDocument];
 }
 
 @end
